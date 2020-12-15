@@ -32,8 +32,8 @@ header img{
 }
 header + form{
   display: inline-block;
-  margin: 1vw;
-  width: 98vw;
+  margin: 1%;
+  width: 98%;
   height: 8vw;
   color: #fff;
 }
@@ -47,6 +47,7 @@ header + form input{
 header + form input:first-child{
   width:70%;
   padding-left: 10%;
+  margin-left: 2%;
   color: #d2dae2;
 }
 header + form input:first-child::placeholder{
