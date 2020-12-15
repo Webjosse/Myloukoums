@@ -1,0 +1,40 @@
+@keyframes carous{
+  from {
+    transform: translateX(-310px);
+  }
+  to {
+    transform: translateX(-2170px);
+  }
+}
+
+#caroussel{
+  height:40vh;
+  width: 80vw;
+  overflow: hidden;
+  border: 1px solid green;
+  margin: auto;
+}
+#caroussel ul {
+  animation: carous 20s linear 0s infinite;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 100%;
+}
+#caroussel ul:hover{
+  animation-play-state: paused;
+}
+#caroussel ul li{
+  display: block;
+  height:80%;
+  background-color: red;
+  margin: 30px;
+  padding: 0px;
+}
+#caroussel ul li div{
+  width: 250px;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  font-size: 300%
+}
