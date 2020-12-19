@@ -81,21 +81,22 @@ input#recherche{
 
 /* Articles */
 .articles{
-
+  background-color: blueviolet;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 10px;
   display: flex;
   flex-direction: column;
+
   align-items:center;
+
 
 }
 
 .recherche{
 
-  display: flex;
+  display: inline-flex;
   justify-content: space-between;
-  
 
   border-radius: 5px;
   margin-bottom: 5px;
@@ -110,10 +111,8 @@ input#recherche{
 
 
 .description{
-
   display: flex;
   flex-direction: column;
-  width: 100%;
   
 }
 
@@ -123,19 +122,21 @@ input#recherche{
 }
 
 .description p{
-  margin-right: 5px;
+  margin: 10px;
+
 }
 .prix{
   display: flex;
   align-items: center;
-  padding-left: 5px;
-  border-left: 1px dashed ;
-
+  align-self: right;
+  margin-top: 2px;
+  background-color: black; 
 }
 
 .recherche img{
 
   width: 30%;
+  height: 30%;
   margin: 10px;
 
 }
@@ -154,11 +155,18 @@ fieldset.pays{
     border-color: rgb(136, 10, 136);
 
   }
- 
+  .articles{
+    padding-left: inherit;
+    padding-right: inherit;
+  }
 
   .filtres{
-    background-color: rgba(12, 98, 197, 0.842);
- 
+    background-color: rgb(12, 98, 197);
+    position: inherit;
+    border-radius: inherit;
+    margin-top: 10px ;
+    margin-right: 10px;
+
   }
 
 
@@ -229,10 +237,9 @@ fieldset.pays{
 
   }
 
-  .grid6 {
+  .grid6{
     grid-column: 1/2;
     grid-row:7;
-  
 
   }
 
@@ -250,11 +257,6 @@ fieldset.pays{
     padding: 5px;
   }
 
-  .grid6  fieldset input{
-   
-    margin-bottom: 0.5px;
-
-  }
 
 
 

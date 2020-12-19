@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Resultat apres recherche </title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -12,7 +14,7 @@
         <h2><a href="">Accueil</a></h2>
         <img src="medias/loukoum2.png" alt="Myloukoums.ml">
         <h2><a href="">Mon Panier</a></h2>
-      
+
     </header>
         <form id="nav" action="results.html" method="get">
         <input type="text" name="search" placeholder="Chercher ici" value="">
@@ -20,7 +22,7 @@
       </form>
 
 
- <!--  recheche-->
+ <!--  recherche-->
     <div class= "RESULTATS">
 
          <!--  Petite en tete -->
@@ -36,73 +38,82 @@
 
             <div class="articles">
                 <div class="recherche">
-                    
-                    <img src="medias/chocolate-sultan-turkish-delight.jpg" alt="">
-                   
+
+                    <img src="medias/choco.png" alt="">
+
                     <div class="description">
                         <h1 class="Loukoums_name"> Sultan-Turkin</h1>
-                        <p> drescription  </p>
+                        <p> 
+                            drescription :
+                            
+                            
+                          
+                        </p>
                     </div>
                     <div class="prix">
-                        <h3> 9,99€/kg</h3>
+                        <h5> 9,99€/kg</h5>
                     </div>
-    
+
                 </div>
 
                 <div class="recherche">
-                    
+
                     <img src="medias/loukoum1.png" alt="">
-                   
+
                     <div class="description">
                         <h1 class="Loukoums_name"> La fraise des loukoums</h1>
-                        <p> drescription  </p>
+                        <p> 
+                            drescription 
+                            lore 
+
+                        </p>
                     </div>
                     <div class="prix">
-                        <h3> 9,99€/kg</h3>
+                        <h5> 9,99€/kg</h5>
                     </div>
-    
+
                 </div>
                 <div class="recherche">
-                    
-                    <img src="medias/turkish-delight.jpg" alt="">
-                   
+
+                    <img src="medias/turkish-delight.png" alt="">
+
                     <div class="description">
                         <h1 class="Loukoums_name"> fruits rouge loulkoums</h1>
                         <p> drescription  </p>
                     </div>
                     <div class="prix">
-                        <h3> 9,99€/kg</h3>
+                        <h5> 9,99€/kg</h5>
                     </div>
-    
+
                 </div>
                 <div class="recherche">
-                    
-                    <img src="medias/turkish-delights-871281699577Lyo3.jpg" alt="">
-                   
+
+                    <img src="medias/bizar.jpg" alt="">
+
                     <div class="description">
                         <h1 class="Loukoums_name"> Delice d'amande</h1>
                         <p> drescription  </p>
                     </div>
                     <div class="prix">
-                        <h3> 9,99€/kg</h3>
+                        <h5> 9,99€/kg</h5>
                     </div>
-    
+
                 </div>
 
                 <div class="recherche">
-                    
+
                     <img src="medias/CC_loukoums.jpg" alt="">
-                   
+
                     <div class="description">
                         <h1 class="Loukoums_name"> Les 1000 varités</h1>
                         <p> drescription  </p>
                     </div>
                     <div class="prix">
-                        <h3> 9,99€/kg</h3>
+                        <h5> 9,99€/kg</h5>
                     </div>
-    
+
                 </div>
-                
+
             </div>
 
              <!-- Formulaire de recherche -->
@@ -113,24 +124,24 @@
                         <div class="grid0"> <h2>FILTRER LES PRODUITS</h2></div>
 
                         <div class="filtre grid1">
-                        
+
                             <div class="group_mot">
                                 <fieldset class="pays">
                                     <legend>
                                         <h3> Chercher par mot-clé :</h3>
-                                        
+
                                         <input type="text" id="recherche" name="recherche" class="" placeholder="Marque,Goût....">
                                     </legend>
                                 </fieldset>
-                              
-                                
+
+
                             </div>
-                        
+
                         </div>
 
                     <!--Filtre Regions-->
                         <div class="filtre regions grid2">
-                            
+
                             <div class="group_input ">
                                 <fieldset class="pays">
                                     <legend>
@@ -138,7 +149,7 @@
                                     </legend>
 
                                     <select id="pays" name="pays">
-                                    
+
                                         <optgroup label="Europe">
                                             <option value="france">France</option>
                                             <option value="belgique">Belgique</option>
@@ -147,7 +158,7 @@
                                             <option value="italie">Italie</option>
                                             <option value="royaume-uni">Royaume-Uni</option>
                                         </optgroup>
-    
+
                                         <optgroup label="Afrique">
                                             <option value="nigeria">Nigeria</option>
                                             <option value="cote d'ivoire">Côte d'Ivoire</option>
@@ -160,7 +171,7 @@
                                             <option value="togo">Togo</option>
                                             <option value="egypte">Egypte</option>
                                     </optgroup>
-    
+
                                     <optgroup label="Amerique">
                                         <option value="canada">Canada</option>
                                         <option value="etats-unis">Etats-Unis</option>
@@ -170,7 +181,7 @@
                                         <option value="perou">Pérou</option>
                                         <option value="cuba">Cuba</option>
                                     </optgroup>
-    
+
                                     <optgroup label="Asie">
                                         <option value="japon">Japon</option>
                                         <option value="indonesie">Indonésie</option>
@@ -180,16 +191,16 @@
                                         <option value="thailainde">Thailainde</option>
                                         <option value="armenie">Armenie</option>
                                     </optgroup>
-    
+
                                     </select>
                                 </fieldset>
-                                
-                            
+
+
                             </div>
                         </div>
                     <!--Filtre Gouts-->
                         <div class="filtre grid3">
-                            
+
 
                             <div class="group_check ">
                                 <fieldset>
@@ -197,93 +208,93 @@
                                         <h3> Goûts:</h3>
                                     </legend>
                                     <label>
-                                        <input name="topping" type="checkbox" value="bergamote"> 
+                                        <input name="topping" type="checkbox" value="bergamote">
                                         Bergamote
                                     </label>
-                                    
+
                                     <label>
-                                        <input name="topping" type="checkbox" value="cannelle"> 
+                                        <input name="topping" type="checkbox" value="cannelle">
                                         Cannelle
                                     </label>
                                     <label>
-                                        <input name="topping" type="checkbox" value="fraise"> 
+                                        <input name="topping" type="checkbox" value="fraise">
                                         Fraise
                                     </label>
                                     <label>
-                                        <input name="topping" type="checkbox" value="menthe"> 
+                                        <input name="topping" type="checkbox" value="menthe">
                                         Menthe
                                     </label>
-                                
+
                                     <label>
-                                        <input name="topping" type="checkbox" value="noisette"> 
+                                        <input name="topping" type="checkbox" value="noisette">
                                         Noisette
                                     </label>
                                     <label>
-                                        <input name="topping" type="checkbox" value="rose"> 
+                                        <input name="topping" type="checkbox" value="rose">
                                         Rose
                                     </label>
                                     <label>
-                                        <input name="topping" type="checkbox" value="vanille"> 
+                                        <input name="topping" type="checkbox" value="vanille">
                                         Vanille
                                     </label>
                                     <label>
-                                        <input name="topping" type="checkbox" value="assortis"> 
+                                        <input name="topping" type="checkbox" value="assortis">
                                         Assortis
                                     </label>
                                     <label>
-                                        <input name="topping" type="checkbox" value="citron"> 
+                                        <input name="topping" type="checkbox" value="citron">
                                         Citron
                                     </label>
                                     <label>
-                                        <input name="topping" type="checkbox" value="amandes"> 
+                                        <input name="topping" type="checkbox" value="amandes">
                                         Amande
                                     </label>
                                     <label>
-                                        <input name="topping" type="checkbox" value="pistache"> 
+                                        <input name="topping" type="checkbox" value="pistache">
                                         Pistache
                                     </label>
 
 
                                 </fieldset>
-                                
-                            </div>   
+
+                            </div>
                         </div>
 
                     <!--Filtre Qualité-->
                         <div class="filtre grid4">
                             <div class="group_input">
                                 <fieldset class="qualite">
-                                    <legend>  
-                                        <h3> Qualité:</h3> 
+                                    <legend>
+                                        <h3> Qualité:</h3>
                                     </legend>
-                                    
-                                    
-                                    <label> 
-                                        <input name="qualite" type="radio" value="petite" id = "petite"> 
+
+
+                                    <label>
+                                        <input name="qualite" type="radio" value="petite" id = "petite">
                                         Petite
                                     </label>
 
-                                    
+
                                     <label>
                                         <input name="qualite" type="radio" value="moyenne" id = "moyenne">
                                         Moyenne
                                     </label>
 
-                                    
-                                    <label> 
+
+                                    <label>
                                         <input name="qualité" type="radio" value="grande" id ="grande">
                                         Grande
                                     </label>
-                            
+
 
                                 </fieldset>
 
-                            
+
                             </div>
                         </div>
                     <!--Filtre Prix-->
                         <div class="filtre grid5">
-                                
+
                             <div class="group_input">
                                 <fieldset>
                                     <legend>
@@ -292,15 +303,15 @@
                                     <label for="prix">
 
                                         <input type="range" name="prix">
-                                     
+
                                     </label>
-                                    
+
                                 </fieldset>
                             </div>
 
                         </div>
-                    
-                    <!--Envoie ou annuler-->
+
+                    <!--Envoi ou annuler-->
                         <div class="grid6">
                             <fieldset>
                                 <legend>
@@ -312,22 +323,92 @@
 
 
                             </fieldset>
-                                
-                        </div>  
-    
-                    </div> 
+
+                        </div>
+
+                    </div>
                 </form>
             </div>
-     
-        
-            
+
+
+
         </section>
-        
-
-             
-
     </div>
- 
- 
+
+    <!--Pied de page -->
+    <footer>
+
+        <div class="contenu_footer">
+
+          <div class="footer_services">
+            <h3>Nos Services</h3>
+            <ul class="liste_footer">
+                <li><a href="#">Vente en magazin</a></li>
+                <li><a href="#">Vente à en porter</a></li>
+                <li><a href="#">Vente en ligne</a></li>  
+            </ul>
+          </div>
+
+          <div class="footer_contact">
+            <h3>Nous contacter</h3>
+            <ul class="liste_footer">
+              <li><a href="#">
+                  1 Rue de la Technologie, 69622 Villeurbanne
+                </a>
+              </li>
+              <li><a href="#">
+                  04 72 69 20 00
+                </a>
+              </li>
+              <li><a href="#">
+                  Qui sommes nous ?
+                </a>
+              </li>              
+
+              <li><a href="#">
+                <img src="medias/fb.png" alt="icones réseaux sociaux"> 
+                Facebook</a>
+              </li>
+              <li><a href="#">
+                 <img src="medias/insta.png" alt="icones réseaux sociaux">
+                Instagram</a>
+              </li>
+              <li><a href="#">
+                 <img src="medias/twitter.png" alt="icones réseaux sociaux">
+                Twitter</a>
+              </li>     
+            </ul>
+
+          </div>
+
+          <div class="footer_horaires">
+            <h3>Les horaires</h3>
+            <ul class="liste_footer">
+              <li>
+                ✅ Lun 10h-19h
+              </li>
+              <li>
+                ✅ Mar 10h-19h
+              </li>
+              <li>
+                ✅ Mer 10h-19h
+              </li>
+              <li>
+                ✅ Jeu 10h-19h
+              </li>
+              <li>
+                ✅ Ven 10h-19h
+              </li>
+              <li>
+                ❌ Sam fermé
+              </li>
+              <li>
+                ❌ Dim fermé
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </footer>
 </body>
 </html>
