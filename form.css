@@ -84,9 +84,15 @@ header + form input:last-child{
 
   display: inline-block;
   position: relative;
+<<<<<<< HEAD
 
 
 
+=======
+
+
+
+>>>>>>> c8d37c7393796662fb434424cf21f5b640d281bc
 }
 
 .Titre{
@@ -96,7 +102,11 @@ header + form input:last-child{
 
 .title {
   position: relative;
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> c8d37c7393796662fb434424cf21f5b640d281bc
   font-size: 50px;
 }
 
@@ -108,6 +118,7 @@ header + form input:last-child{
   height: 7px;
   background: #23a5c5;
   bottom: -2px;
+<<<<<<< HEAD
 
 }
 
@@ -116,13 +127,69 @@ header + form input:last-child{
   position: absolute;
   border-radius: 10px;
   left: -200vh;
+=======
+
+}
+
+/* disign burger*/
+
+/*  position du burger*/
+.burger {
+  display: block;
+  height: 3px;
+  width: 30px;
+  background: rgb(233, 226, 226);
+  position: absolute;
+  top :51%;
+  left: 50%;
+
+
+  transform: translate(-50%, -50%);
+  transition: background 0.4s;
+}
+/* en haut */
+.burger::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: rgb(209, 48, 48);
+  bottom: 10px;
+  transition: transform 0.7s,
+      top 0.7s,
+      background 0.7s;
+}
+/* en bas*/
+.burger::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: rgb(54, 126, 209);
+  top: 10px;
+  transition: transform 0.7s,
+      bottom background 0.7s;
+}
+
+
+
+
+.filtres{
+  position: absolute;
+  border-radius: 10px;
+  left: -200vh;
+>>>>>>> c8d37c7393796662fb434424cf21f5b640d281bc
   top: 40%;
   background-color: lightseagreen;
 
 
   transition: transform 0.7s,
       left background 0.7s;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c8d37c7393796662fb434424cf21f5b640d281bc
 
 /* lors du clique  */
 .filtres.active {
@@ -143,7 +210,11 @@ header + form input:last-child{
 }
 
 .contenues.active .burger{
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> c8d37c7393796662fb434424cf21f5b640d281bc
   background: transparent;
 }
 
