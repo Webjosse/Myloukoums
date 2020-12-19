@@ -1,40 +1,120 @@
-@keyframes carous{
-  from {
-    transform: translateX(-310px);
+#une ul li > div{
+  background-color: rgba(0,0,0,0.7);
+  color: #0fbcf9;
+  height: inherit;
+}
+h3 + p + div{
+  display: none;
+}
+@media (max-width: 1000px) {
+  #une{
+    color: #0fbcf9;
   }
-  to {
-    transform: translateX(-2170px);
+  #une ul{
+      margin-left: 5vw;
+      padding: 0px;
+      width: 90vw;
+  }
+  #une ul li{
+    width: 90vw;
+    background-size: cover;
+    list-style: none;
+    display: block;
+    margin-bottom: 10%;
+  }
+  #une ul li > div{
+    padding-top: 10vw;
+    height: 80vw;
+  }
+  h3{
+    font-size: 10vw;
+    text-align: center;
+  }
+  h3 + p {
+      font-size: 5vw;
+      margin: 10%;
+      text-align: justify;
   }
 }
 
-#caroussel{
-  height:40vh;
-  width: 80vw;
-  overflow: hidden;
-  border: 1px solid green;
-  margin: auto;
+
+
+@media (min-width: 800px) {
+  #une ul li > div{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    height: 100%;
+  }
+  h3 + p + div{
+    display: block;
+    text-align: center;
+    color: inherit;
+    font-size: 7vw;
+    text-decoration: none;
+  }
+  h3 + p + div a{
+    text-decoration: none;
+    color: #0fbcf9;
+  }
 }
-#caroussel ul {
-  animation: carous 20s linear 0s infinite;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  height: 100%;
-}
-#caroussel ul:hover{
-  animation-play-state: paused;
-}
-#caroussel ul li{
-  display: block;
-  height:80%;
-  background-color: red;
-  margin: 30px;
-  padding: 0px;
-}
-#caroussel ul li div{
-  width: 250px;
-  padding: 0px;
-  margin: 0px;
-  text-align: center;
-  font-size: 300%
+
+
+@media (min-width: 1000px) {
+  h3 + p + div{
+    display: none;
+  }
+  h3{
+    margin: 0%;
+    font-size: 50px;
+    text-align: center;
+  }
+  h3 + p {
+      font-size: 25px;
+      margin: 5%;
+      text-align: justify;
+  }
+  @keyframes carous{
+      from {
+        transform: translateX(-50px);
+      }
+      to {
+        transform: translateX(-2290px);
+      }
+    }
+
+    #une{
+      height:40vh;
+      width: 90vw;
+      overflow: hidden;
+      border: 7px solid #0fbcf9;
+      margin: auto;
+    }
+    #une ul {
+      animation: carous 20s linear 0s infinite;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      height: 100%;
+    }
+    #une ul:hover{
+      animation-play-state: paused;
+    }
+    #une ul li{
+      display: block;
+      height:80%;
+      background-color: red;
+      margin: 30px;
+      padding: 0px;
+    }
+  #une ul li > div{
+      width: 500px;
+      padding: 0px;
+      margin: 0px;
+      text-align: center;
+      font-size: 300%
+    }
+  }
+  #une ul li > div{
+    list-style: none;
+  }
 }
