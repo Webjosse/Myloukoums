@@ -79,21 +79,6 @@ header + form input:last-child{
 
 }
 
-.contenues{
-  width: 50px;
-
-  display: inline-block;
-  position: relative;
-<<<<<<< HEAD
-
-
-
-=======
-
-
-
->>>>>>> c8d37c7393796662fb434424cf21f5b640d281bc
-}
 
 .Titre{
   color: black;
@@ -102,11 +87,6 @@ header + form input:last-child{
 
 .title {
   position: relative;
-<<<<<<< HEAD
-
-=======
-
->>>>>>> c8d37c7393796662fb434424cf21f5b640d281bc
   font-size: 50px;
 }
 
@@ -118,8 +98,6 @@ header + form input:last-child{
   height: 7px;
   background: #23a5c5;
   bottom: -2px;
-<<<<<<< HEAD
-
 }
 
 
@@ -178,18 +156,14 @@ header + form input:last-child{
   position: absolute;
   border-radius: 10px;
   left: -200vh;
->>>>>>> c8d37c7393796662fb434424cf21f5b640d281bc
   top: 40%;
   background-color: lightseagreen;
 
 
   transition: transform 0.7s,
       left background 0.7s;
-<<<<<<< HEAD
 }
-=======
 }
->>>>>>> c8d37c7393796662fb434424cf21f5b640d281bc
 
 /* lors du clique  */
 .filtres.active {
@@ -210,11 +184,6 @@ header + form input:last-child{
 }
 
 .contenues.active .burger{
-<<<<<<< HEAD
-
-=======
-
->>>>>>> c8d37c7393796662fb434424cf21f5b640d281bc
   background: transparent;
 }
 
