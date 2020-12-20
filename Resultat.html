@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Resultat apres recherche </title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="form.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -15,30 +16,42 @@
         <h2><a href="">Mon Panier</a></h2>
 
     </header>
-      <form id="nav" action="results.html" method="get">
+        <form id="nav" action="results.html" method="get">
         <input type="text" name="search" placeholder="Chercher ici" value="">
         <input type="submit" name="confirmer" value="&#128270;">
       </form>
 
+
  <!--  recherche-->
-    <div id="RESULTATS">
-         <!--  Petit en-tete -->
-            <div class="title">
-                    <h2>RESULTATS</h2>
+    <div class= "RESULTATS">
+
+         <!--  Petite en tete -->
+        <div class="Resu">
+
+            <div class="bande">
+                <div class="Titre">
+                    <h2 class="title">RESULTATS</h2>
+                </div>
             </div>
 
         <section>
+
             <div class="articles">
                 <div class="recherche">
 
-                    <img src="medias/choco.jpg" alt="">
+                    <img src="medias/choco.png" alt="">
 
                     <div class="description">
                         <h1 class="Loukoums_name"> Sultan-Turkin</h1>
-                        <p> drescription  </p>
+                        <p> 
+                            drescription :
+                            
+                            
+                          
+                        </p>
                     </div>
                     <div class="prix">
-                        <h3> 9,99€/kg</h3>
+                        <h5> 9,99€/kg</h5>
                     </div>
 
                 </div>
@@ -49,23 +62,27 @@
 
                     <div class="description">
                         <h1 class="Loukoums_name"> La fraise des loukoums</h1>
-                        <p> drescription  </p>
+                        <p> 
+                            drescription 
+                            lore 
+
+                        </p>
                     </div>
                     <div class="prix">
-                        <h3> 9,99€/kg</h3>
+                        <h5> 9,99€/kg</h5>
                     </div>
 
                 </div>
                 <div class="recherche">
 
-                    <img src="medias/turkish-delight.jpg" alt="">
+                    <img src="medias/turkish-delight.png" alt="">
 
                     <div class="description">
                         <h1 class="Loukoums_name"> fruits rouge loulkoums</h1>
                         <p> drescription  </p>
                     </div>
                     <div class="prix">
-                        <h3> 9,99€/kg</h3>
+                        <h5> 9,99€/kg</h5>
                     </div>
 
                 </div>
@@ -78,7 +95,7 @@
                         <p> drescription  </p>
                     </div>
                     <div class="prix">
-                        <h3> 9,99€/kg</h3>
+                        <h5> 9,99€/kg</h5>
                     </div>
 
                 </div>
@@ -92,7 +109,7 @@
                         <p> drescription  </p>
                     </div>
                     <div class="prix">
-                        <h3> 9,99€/kg</h3>
+                        <h5> 9,99€/kg</h5>
                     </div>
 
                 </div>
@@ -100,10 +117,13 @@
             </div>
 
              <!-- Formulaire de recherche -->
-                <form id="Avance" action="recherche.php" method="GET">
+             <div class="filtres">
+
+                <form action="recherche.php" method="GET" class="form_recherche">
+                    <div class="forms">
                         <div class="grid0"> <h2>FILTRER LES PRODUITS</h2></div>
 
-                        <div class="grid1">
+                        <div class="filtre grid1">
 
                             <div class="group_mot">
                                 <fieldset class="pays">
@@ -120,7 +140,7 @@
                         </div>
 
                     <!--Filtre Regions-->
-                        <div class="regions grid2">
+                        <div class="filtre regions grid2">
 
                             <div class="group_input ">
                                 <fieldset class="pays">
@@ -179,7 +199,7 @@
                             </div>
                         </div>
                     <!--Filtre Gouts-->
-                        <div class="grid3">
+                        <div class="filtre grid3">
 
 
                             <div class="group_check ">
@@ -241,7 +261,7 @@
                         </div>
 
                     <!--Filtre Qualité-->
-                        <div class="grid4">
+                        <div class="filtre grid4">
                             <div class="group_input">
                                 <fieldset class="qualite">
                                     <legend>
@@ -273,7 +293,7 @@
                             </div>
                         </div>
                     <!--Filtre Prix-->
-                        <div class="grid5">
+                        <div class="filtre grid5">
 
                             <div class="group_input">
                                 <fieldset>
@@ -291,7 +311,7 @@
 
                         </div>
 
-                    <!--Envoi ou annulation-->
+                    <!--Envoi ou annuler-->
                         <div class="grid6">
                             <fieldset>
                                 <legend>
@@ -300,15 +320,95 @@
 
                                 <input type="submit" value="Rechercher">
                                 <input type="reset" value="Annuler" />
+
+
                             </fieldset>
+
                         </div>
+
+                    </div>
                 </form>
+            </div>
+
+
+
         </section>
-
-
-
-
     </div>
 
+    <!--Pied de page -->
+    <footer>
+
+        <div class="contenu_footer">
+
+          <div class="footer_services">
+            <h3>Nos Services</h3>
+            <ul class="liste_footer">
+                <li><a href="#">Vente en magazin</a></li>
+                <li><a href="#">Vente à en porter</a></li>
+                <li><a href="#">Vente en ligne</a></li>  
+            </ul>
+          </div>
+
+          <div class="footer_contact">
+            <h3>Nous contacter</h3>
+            <ul class="liste_footer">
+              <li><a href="#">
+                  1 Rue de la Technologie, 69622 Villeurbanne
+                </a>
+              </li>
+              <li><a href="#">
+                  04 72 69 20 00
+                </a>
+              </li>
+              <li><a href="#">
+                  Qui sommes nous ?
+                </a>
+              </li>              
+
+              <li><a href="#">
+                <img src="medias/fb.png" alt="icones réseaux sociaux"> 
+                Facebook</a>
+              </li>
+              <li><a href="#">
+                 <img src="medias/insta.png" alt="icones réseaux sociaux">
+                Instagram</a>
+              </li>
+              <li><a href="#">
+                 <img src="medias/twitter.png" alt="icones réseaux sociaux">
+                Twitter</a>
+              </li>     
+            </ul>
+
+          </div>
+
+          <div class="footer_horaires">
+            <h3>Les horaires</h3>
+            <ul class="liste_footer">
+              <li>
+                ✅ Lun 10h-19h
+              </li>
+              <li>
+                ✅ Mar 10h-19h
+              </li>
+              <li>
+                ✅ Mer 10h-19h
+              </li>
+              <li>
+                ✅ Jeu 10h-19h
+              </li>
+              <li>
+                ✅ Ven 10h-19h
+              </li>
+              <li>
+                ❌ Sam fermé
+              </li>
+              <li>
+                ❌ Dim fermé
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </footer>
 </body>
 </html>

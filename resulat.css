@@ -1,25 +1,34 @@
+
 /* RESULTATS*/
-#RESULTATS{
+.Resu{
+
     background-color: rgb(4, 42, 78);
-    height: 100%;
+
 }
 
 /* bande du titre */
-div.title{
+div.bande{
 
   margin-left: 20px;
+
+  color:white;
   display: inline-flex;
   justify-content: center;
 
 }
 
-.title h2 {
+
+div.Titre{
   color: black;
+
+}
+
+h2.title {
   position: relative;
   font-size: 50px;
 }
 
-.title h2::before {
+h2.title::before {
   content: "";
   position: absolute;
   left: 4px;
@@ -29,17 +38,19 @@ div.title{
   bottom: -2px;
 }
 
-/*Recherche avancée par filtres*/
-#Avance{
 
+
+.filtres{
+  
   background-color: lightseagreen;
-  text-align: center;
-  border-radius:10px;
-
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: 90px;
 }
+
+
+/* lors du clique  */
+
+
+
+
 .group_check {
 
   display: flex;
@@ -62,7 +73,7 @@ input#recherche{
 }
 
 
-#Avance > div:nth-child(6), #Avance > div:nth-child(1){
+.grid5, .grid0{
   display: none;
 }
 
@@ -70,21 +81,22 @@ input#recherche{
 
 /* Articles */
 .articles{
-
+  background-color: blueviolet;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 10px;
   display: flex;
   flex-direction: column;
+
   align-items:center;
+
 
 }
 
 .recherche{
 
-  display: flex;
+  display: inline-flex;
   justify-content: space-between;
-
 
   border-radius: 5px;
   margin-bottom: 5px;
@@ -99,11 +111,9 @@ input#recherche{
 
 
 .description{
-
   display: flex;
   flex-direction: column;
-  width: 100%;
-
+  
 }
 
 .description h1{
@@ -112,19 +122,21 @@ input#recherche{
 }
 
 .description p{
-  margin-right: 5px;
+  margin: 10px;
+
 }
 .prix{
   display: flex;
   align-items: center;
-  padding-left: 5px;
-  border-left: 1px dashed ;
-
+  align-self: right;
+  margin-top: 2px;
+  background-color: black; 
 }
 
 .recherche img{
 
   width: 30%;
+  height: 30%;
   margin: 10px;
 
 }
@@ -137,24 +149,38 @@ fieldset.pays{
 }
 
 
-@media screen and (min-width : 1000px) {
+@media screen and (min-width : 1024px) {
 
   fieldset{
     border-color: rgb(136, 10, 136);
 
   }
+  .articles{
+    padding-left: inherit;
+    padding-right: inherit;
+  }
 
-  #Avance {
+  .filtres{
+    background-color: rgb(12, 98, 197);
+    position: inherit;
+    border-radius: inherit;
+    margin-top: 10px ;
+    margin-right: 10px;
+
+  }
+
+
+  .forms{
     text-align: center;
-    border-radius:0px;
-    background-color: rgba(12, 98, 197, 0.842);
+    border-radius:10px;
+
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 90px;
-    height:auto;
+
   }
 
-  #Avance > div:nth-child(1){
+  .grid0{
     display: flex;
     justify-content: center;
     border-bottom: 3px solid;
@@ -165,7 +191,7 @@ fieldset.pays{
 
   }
 
-  #Avance > div:nth-child(2){
+  .grid1{
 
 
     align-self: start;
@@ -176,7 +202,7 @@ fieldset.pays{
 
   }
 
-  #Avance > div:nth-child(3){
+  .grid2{
 
     grid-column: 1/3;
     grid-row: 3/4;
@@ -184,7 +210,7 @@ fieldset.pays{
   }
 
 
-  #Avance > div:nth-child(4){
+  .grid3{
 
     grid-column: 2;
     grid-row: 4/9;
@@ -192,7 +218,7 @@ fieldset.pays{
 
   }
 
-  #Avance > div:nth-child(5){
+  .grid4{
 
 
     grid-column: 1;
@@ -201,7 +227,7 @@ fieldset.pays{
   }
 
 
-  #Avance > div:nth-child(6){
+  .grid5{
 
     display: inherit;
 
@@ -211,15 +237,15 @@ fieldset.pays{
 
   }
 
-  #Avance > div:nth-child(7) {
+  .grid6{
     grid-column: 1/2;
     grid-row:7;
-
 
   }
 
 
-  #RESULTATS section{
+  section{
+
     display: flex;
     flex-direction :row-reverse;
     justify-content: start;
@@ -231,11 +257,6 @@ fieldset.pays{
     padding: 5px;
   }
 
-  #Avance > div:last-child fieldset input{
-
-    margin-bottom: 0.5px;
-
-  }
 
 
 

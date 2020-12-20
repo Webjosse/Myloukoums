@@ -59,9 +59,48 @@ header + form input:last-child{
   height: inherit;
   font-size: 150%;
 }
+
+
+/*  Footer*/
+
+
+.contenu_footer {
+  border-top: 2px dashed ;
+  display: flex;
+
+  flex-direction: column;
+
+
+
+}
+
+ul.liste_footer{
+  list-style-type: none;
+}
+ul.liste_footer li a{
+  cursor: pointer;
+  text-decoration: none;
+  color:inherit;
+  display: flex;
+  align-items: center;
+
+}
+ul.liste_footer li {
+  padding: 10px;
+
+}
+div.footer_contact img{
+  width :30px;
+}
 @media (min-width:1000px) {
   header + form{
     height: 4vw;
+  }
+  .contenu_footer {
+
+    flex-direction: inherit;
+    justify-content: space-between;
+
   }
 }
 body > h1{
