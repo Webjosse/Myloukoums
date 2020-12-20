@@ -1,28 +1,53 @@
-#une ul li > div{
+#une_slider ul li > div{
   background-color: rgba(0,0,0,0.7);
   color: #0fbcf9;
   height: inherit;
 }
+
 h3 + p + div{
   display: none;
 }
+
+#une_infos{
+  margin-bottom: 5vw;
+  text-align: justify;
+  background-size: cover;
+  color: #0fbcf9;
+}
+
+#une_infos div{
+  background-color: rgba(0, 0, 0, 0.6);
+  height:70vh;
+  padding: 5%;
+}
+
+#une_infos h1{
+  text-align: center;
+  font-size: 5vw;
+}
+
+#une_infos p{
+  font-size: 3vw;
+}
+
+
 @media (max-width: 1000px) {
-  #une{
+  #une_slider{
     color: #0fbcf9;
   }
-  #une ul{
+  #une_slider ul{
       margin-left: 5vw;
       padding: 0px;
       width: 90vw;
   }
-  #une ul li{
+  #une_slider ul li{
     width: 90vw;
     background-size: cover;
     list-style: none;
     display: block;
     margin-bottom: 10%;
   }
-  #une ul li > div{
+  #une_slider ul li > div{
     padding-top: 10vw;
     height: 80vw;
   }
@@ -37,10 +62,8 @@ h3 + p + div{
   }
 }
 
-
-
 @media (min-width: 800px) {
-  #une ul li > div{
+  #une_slider ul li > div{
     padding-top: 2%;
     padding-bottom: 2%;
     height: 100%;
@@ -82,31 +105,31 @@ h3 + p + div{
       }
     }
 
-    #une{
+    #une_slider{
       height:40vh;
       width: 90vw;
       overflow: hidden;
       border: 7px solid #0fbcf9;
       margin: auto;
     }
-    #une ul {
+    #une_slider ul {
       animation: carous 20s linear 0s infinite;
       display: flex;
       justify-content: left;
       align-items: center;
       height: 100%;
     }
-    #une ul:hover{
+    #une_slider ul:hover{
       animation-play-state: paused;
     }
-    #une ul li{
+    #une_slider ul li{
       display: block;
       height:80%;
       background-color: red;
       margin: 30px;
       padding: 0px;
     }
-  #une ul li > div{
+  #une_slider ul li > div{
       width: 500px;
       padding: 0px;
       margin: 0px;
@@ -114,7 +137,7 @@ h3 + p + div{
       font-size: 300%
     }
   }
-  #une ul li > div{
+  #une_slider ul li > div{
     list-style: none;
   }
 }

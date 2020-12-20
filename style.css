@@ -56,6 +56,16 @@ header + form input:first-child::placeholder{
 header + form input:last-child{
   display: inline-block;
   width: 15%;
-  height: 8vw;
+  height: inherit;
   font-size: 150%;
+}
+@media (min-width:1000px) {
+  header + form{
+    height: 4vw;
+  }
+}
+body > h1{
+  text-align: center;
+  color: #0fbcf9;
+  font-size: 5vw;
 }

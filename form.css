@@ -1,73 +1,9 @@
-body{
-  margin: 0px;
-  font-family: sans-serif;
-}
-header{
-  top:0px;
-  left:0px;
-  display: flex;
-  height: 10vw;
-  width: 100%;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #d2dae2;
-}
-header h2{
-  width: 30%;
-  text-align: center;
-  font-size: 25px;
-}
-header h2 a{
-    display: block;
-    text-decoration: none;
-    color: #0fbcf9;
-}
-header h2:hover a{
-  transition: 0.5s;
-  transform: scale(1.2);
-}
-header img{
-  height: inherit;
-  transform: scale(1.5);
-}
-header + form{
-  display: inline-block;
-  margin: 1%;
-  width: 98%;
-  height: 8vw;
-  color: #fff;
-}
-header + form input{
-  font-size: 200%;
-  height: inherit;
-  border-radius: 4vw;
-  background-color: #0fbcf9;
-  outline:0;
-}
-header + form input:first-child{
-  width:70%;
-  padding-left: 10%;
-  margin-left: 2%;
-  color: #d2dae2;
-}
-header + form input:first-child::placeholder{
-  color: #4bcffa;
-}
-header + form input:last-child{
-  display: inline-block;
-  width: 15%;
-  height: 8vw;
-  font-size: 150%;
-}
-
-
 /* RESULTATS*/
 .Resu{
 
     background-color: rgb(4, 42, 78);
 
 }
-
 /* bande tu titre */
 .bande{
 
@@ -78,7 +14,6 @@ header + form input:last-child{
   justify-content: center;
 
 }
-
 
 .Titre{
   color: black;
@@ -109,46 +44,6 @@ header + form input:last-child{
 
 }
 
-/* disign burger*/
-
-/*  position du burger*/
-.burger {
-  display: block;
-  height: 3px;
-  width: 30px;
-  background: rgb(233, 226, 226);
-  position: absolute;
-  top :51%;
-  left: 50%;
-
-
-  transform: translate(-50%, -50%);
-  transition: background 0.4s;
-}
-/* en haut */
-.burger::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 3px;
-  background: rgb(209, 48, 48);
-  bottom: 10px;
-  transition: transform 0.7s,
-      top 0.7s,
-      background 0.7s;
-}
-/* en bas*/
-.burger::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 3px;
-  background: rgb(54, 126, 209);
-  top: 10px;
-  transition: transform 0.7s,
-      bottom background 0.7s;
-}
-
 
 
 
@@ -158,12 +53,10 @@ header + form input:last-child{
   left: -200vh;
   top: 40%;
   background-color: lightseagreen;
-
-
   transition: transform 0.7s,
       left background 0.7s;
 }
-}
+
 
 /* lors du clique  */
 .filtres.active {
