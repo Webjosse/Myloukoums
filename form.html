@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Myloukoums.ml</title>
     <link rel="stylesheet" href="form.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -28,16 +28,19 @@
             </div>
 
         <section>
-            <div class="articles">
+            <div id="articles">
                 <div class="recherche">
 
                     <img src="medias/choco.jpg" alt="">
 
-                    <div class="description">
-                        <h1 class="Loukoums_name"> Sultan-Turkin</h1>
-                        <p> drescription  </p>
+                    <div>
+                        <h1> Chocoloukoum</h1>
+                        <p> Ressentez dans vos papilles des flots de chocolats, tout ça en un seul loukoum.
+                          En partenariat avec les maitres choclatiers Lindt, nous offrons les meilleurs
+                          loukoums au chocolat, pour un goût sans rival, un goût de choc, un goût de
+                        <b>Chocoloukoum</b> .</p>
                     </div>
-                    <div class="prix">
+                    <div>
                         <h3> 9,99€/kg</h3>
                     </div>
 
@@ -47,11 +50,11 @@
 
                     <img src="medias/loukoum1.png" alt="">
 
-                    <div class="description">
-                        <h1 class="Loukoums_name"> La fraise des loukoums</h1>
+                    <div>
+                        <h1> La fraise des loukoums</h1>
                         <p> drescription  </p>
                     </div>
-                    <div class="prix">
+                    <div>
                         <h3> 9,99€/kg</h3>
                     </div>
 
@@ -60,11 +63,11 @@
 
                     <img src="medias/turkish-delight.jpg" alt="">
 
-                    <div class="description">
-                        <h1 class="Loukoums_name"> fruits rouge loulkoums</h1>
+                    <div>
+                        <h1> fruits rouge loulkoums</h1>
                         <p> drescription  </p>
                     </div>
-                    <div class="prix">
+                    <div>
                         <h3> 9,99€/kg</h3>
                     </div>
 
@@ -73,11 +76,11 @@
 
                     <img src="medias/bizar.jpg" alt="">
 
-                    <div class="description">
-                        <h1 class="Loukoums_name"> Delice d'amande</h1>
+                    <div>
+                        <h1> Delice d'amande</h1>
                         <p> drescription  </p>
                     </div>
-                    <div class="prix">
+                    <div>
                         <h3> 9,99€/kg</h3>
                     </div>
 
@@ -87,8 +90,8 @@
 
                     <img src="medias/CC_loukoums.jpg" alt="">
 
-                    <div class="description">
-                        <h1 class="Loukoums_name"> Les 1000 varités</h1>
+                    <div>
+                        <h1> Les 1000 varités</h1>
                         <p> drescription  </p>
                     </div>
                     <div class="prix">
@@ -101,88 +104,75 @@
 
              <!-- Formulaire de recherche -->
                 <form id="Avance" action="recherche.php" method="GET">
-                        <div class="grid0"> <h2>FILTRER LES PRODUITS</h2></div>
-
-                        <div class="grid1">
-
-                            <div class="group_mot">
-                                <fieldset class="pays">
+                        <div><h2>FILTRER LES PRODUITS</h2></div>
+                            <div>
+                                <fieldset>
                                     <legend>
                                         <h3> Chercher par mot-clé :</h3>
 
-                                        <input type="text" id="recherche" name="recherche" class="" placeholder="Marque,Goût....">
+                                        <input type="text" id="recherche" name="recherche" placeholder="Marque,Goût....">
                                     </legend>
                                 </fieldset>
 
-
                             </div>
-
-                        </div>
 
                     <!--Filtre Regions-->
-                        <div class="regions grid2">
+                          <div >
+                              <fieldset>
+                                  <legend>
+                                      <h3>Pays :</h3>
+                                  </legend>
 
-                            <div class="group_input ">
-                                <fieldset class="pays">
-                                    <legend>
-                                        <h3>Pays :</h3>
-                                    </legend>
+                                  <select id="pays" name="pays">
 
-                                    <select id="pays" name="pays">
+                                  <optgroup label="Europe">
+                                      <option value="france">France</option>
+                                      <option value="belgique">Belgique</option>
+                                      <option value="suisse">Suisse</option>
+                                      <option value="allemagne">Allemagne</option>
+                                      <option value="italie">Italie</option>
+                                      <option value="royaume-uni">Royaume-Uni</option>
+                                  </optgroup>
 
-                                        <optgroup label="Europe">
-                                            <option value="france">France</option>
-                                            <option value="belgique">Belgique</option>
-                                            <option value="suisse">Suisse</option>
-                                            <option value="allemagne">Allemagne</option>
-                                            <option value="italie">Italie</option>
-                                            <option value="royaume-uni">Royaume-Uni</option>
-                                        </optgroup>
+                                  <optgroup label="Afrique">
+                                      <option value="nigeria">Nigeria</option>
+                                      <option value="cote d'ivoire">Côte d'Ivoire</option>
+                                      <option value="soudan">Soudan</option>
+                                      <option value="algerie">Algérie</option>
+                                      <option value="tunisie">Tunisie</option>
+                                      <option value="maroc">Maroc</option>
+                                      <option value="madagascar">Madagascar</option>
+                                      <option value="benin">Bénin</option>
+                                      <option value="togo">Togo</option>
+                                      <option value="egypte">Egypte</option>
+                                  </optgroup>
 
-                                        <optgroup label="Afrique">
-                                            <option value="nigeria">Nigeria</option>
-                                            <option value="cote d'ivoire">Côte d'Ivoire</option>
-                                            <option value="soudan">Soudan</option>
-                                            <option value="algerie">Algérie</option>
-                                            <option value="tunisie">Tunisie</option>
-                                            <option value="maroc">Maroc</option>
-                                            <option value="madagascar">Madagascar</option>
-                                            <option value="benin">Bénin</option>
-                                            <option value="togo">Togo</option>
-                                            <option value="egypte">Egypte</option>
-                                    </optgroup>
+                                  <optgroup label="Amerique">
+                                      <option value="canada">Canada</option>
+                                      <option value="etats-unis">Etats-Unis</option>
+                                      <option value="Bresil">Bresil</option>
+                                      <option value="mexique">Mexique</option>
+                                      <option value="colombie">Colombie</option>
+                                      <option value="perou">Pérou</option>
+                                      <option value="cuba">Cuba</option>
+                                  </optgroup>
 
-                                    <optgroup label="Amerique">
-                                        <option value="canada">Canada</option>
-                                        <option value="etats-unis">Etats-Unis</option>
-                                        <option value="Bresil">Bresil</option>
-                                        <option value="mexique">Mexique</option>
-                                        <option value="colombie">Colombie</option>
-                                        <option value="perou">Pérou</option>
-                                        <option value="cuba">Cuba</option>
-                                    </optgroup>
+                                  <optgroup label="Asie">
+                                      <option value="japon">Japon</option>
+                                      <option value="indonesie">Indonésie</option>
+                                      <option value="chine">Chine</option>
+                                      <option value="inde">Inde</option>
+                                      <option value="singapour">Singapour</option>
+                                      <option value="thailande">Thailainde</option>
+                                      <option value="armenie">Armenie</option>
+                                  </optgroup>
 
-                                    <optgroup label="Asie">
-                                        <option value="japon">Japon</option>
-                                        <option value="indonesie">Indonésie</option>
-                                        <option value="chine">Chine</option>
-                                        <option value="inde">Inde</option>
-                                        <option value="singapour">Singapour</option>
-                                        <option value="thailainde">Thailainde</option>
-                                        <option value="armenie">Armenie</option>
-                                    </optgroup>
+                                </select>
+                              </fieldset>
 
-                                    </select>
-                                </fieldset>
-
-
-                            </div>
                         </div>
                     <!--Filtre Gouts-->
-                        <div class="grid3">
-
-
-                            <div class="group_check ">
+                        <div>
                                 <fieldset>
                                     <legend>
                                         <h3> Goûts:</h3>
@@ -236,63 +226,46 @@
 
 
                                 </fieldset>
-
-                            </div>
                         </div>
 
                     <!--Filtre Qualité-->
-                        <div class="grid4">
-                            <div class="group_input">
-                                <fieldset class="qualite">
-                                    <legend>
-                                        <h3> Qualité:</h3>
-                                    </legend>
+                        <div>
+                            <fieldset>
+                                <legend>
+                                    <h3> Qualité:</h3>
+                                </legend>
+                                <label for="petite">
+                                    <input name="qualite" type="radio" value="petite" id = "petite">
+                                    Petite
+                                </label>
 
+                                <label>
+                                    <input name="qualite" type="radio" value="moyenne" id = "moyenne">
+                                    Moyenne
+                                </label>
 
-                                    <label>
-                                        <input name="qualite" type="radio" value="petite" id = "petite">
-                                        Petite
-                                    </label>
+                                <label>
+                                    <input name="qualite" type="radio" value="grande" id ="grande">
+                                    Grande
+                                </label>
 
-
-                                    <label>
-                                        <input name="qualite" type="radio" value="moyenne" id = "moyenne">
-                                        Moyenne
-                                    </label>
-
-
-                                    <label>
-                                        <input name="qualité" type="radio" value="grande" id ="grande">
-                                        Grande
-                                    </label>
-
-
-                                </fieldset>
-
-
-                            </div>
+                            </fieldset>
                         </div>
                     <!--Filtre Prix-->
-                        <div class="grid5">
+                        <div>
 
-                            <div class="group_input">
-                                <fieldset>
-                                    <legend>
-                                        <h3> Prix/kg: <br> 1€ &rArr; 10€</h3>
-                                    </legend>
-                                    <label for="prix">
-
-                                        <input type="range" name="prix">
-
-                                    </label>
-
-                                </fieldset>
-                            </div>
-
+                        <div>
+                            <fieldset>
+                                <legend>
+                                    <h3> Prix/kg: <br> 1€ &rArr; 10€</h3>
+                                </legend>
+                                      <input type="range" name="prix">
+                              </fieldset>
+                              </div>
                         </div>
 
                     <!--Envoi ou annulation-->
-                        <div class="grid6">
+                        <div>
                             <fieldset>
                                 <legend>
                                     <h3> Pour votre plaisir</h3>

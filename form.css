@@ -31,27 +31,31 @@ div.title{
 
 /*Recherche avancée par filtres*/
 #Avance{
-
   background-color: lightseagreen;
   text-align: center;
   border-radius:10px;
-
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: 90px;
 }
-.group_check {
 
-  display: flex;
+/*GOÛTS*/
+#Avance > div:nth-child(4) {
+
   display: inline-block;
   width: 100%;
 
 }
-.group_check  label{
+#Avance > div:nth-child(4)  label{
   display: flex;
-
   margin-top: 12px;
 
+}
+
+/*Cacher le "FILTRER LES PRODUITS"
+& prix au kilo*/
+#Avance > div:nth-child(6), #Avance > div:nth-child(1){
+  display: none;
 }
 
 
@@ -62,14 +66,8 @@ input#recherche{
 }
 
 
-#Avance > div:nth-child(6), #Avance > div:nth-child(1){
-  display: none;
-}
-
-
-
 /* Articles */
-.articles{
+#articles{
 
   padding-left: 20px;
   padding-right: 20px;
@@ -80,12 +78,13 @@ input#recherche{
 
 }
 
+/*Équivalent à #article > div*/
+
 .recherche{
 
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-
-
   border-radius: 5px;
   margin-bottom: 5px;
   color : white;
@@ -96,9 +95,13 @@ input#recherche{
 
 }
 
+.recherche{
 
+  font-size: 2vw;
+  text-align: justify;
+}
 
-.description{
+.recherche > div:first-of-type{
 
   display: flex;
   flex-direction: column;
@@ -106,15 +109,16 @@ input#recherche{
 
 }
 
-.description h1{
+.recherche > div:first-of-type h1{
   align-self: center;
 
 }
 
-.description p{
-  margin-right: 5px;
+.recherche > div:first-of-type p{
+  margin: 2%;
 }
-.prix{
+
+.recherche > div:last-of-type{
   display: flex;
   align-items: center;
   padding-left: 5px;
@@ -129,13 +133,19 @@ input#recherche{
 
 }
 
-fieldset.pays{
+/* Pour le "Chercher par
+mot-clé" et le "Pays" */
+
+#Avance div:nth-child(2) fieldset,
+#Avance div:nth-child(3) fieldset
+{
 
   display: flex ;
   flex-direction: column;
 
 }
 
+/*Pour PC*/
 
 @media screen and (min-width : 1000px) {
 
@@ -225,8 +235,8 @@ fieldset.pays{
     justify-content: start;
   }
 
-  fieldset.qualite label{
-
+  /*Pour Qualité*/
+  #Avance > div:nth-child(5) fieldset label{
     display: flex ;
     padding: 5px;
   }
@@ -237,6 +247,32 @@ fieldset.pays{
 
   }
 
+  .recherche{
+    font-size: 1.5vw;
+  }
 
-
+}
+/*Pour téléphone*/
+@media screen and (max-width : 800px) {
+    .recherche{
+      height: 50vw;
+      width: 80vw;
+    }
+    .recherche img{
+      margin: 0px;
+      position: absolute;
+      width: inherit;
+      height: inherit;
+    }
+    .recherche div{
+      z-index: 2;
+    }
+    .recherche div{
+      height:100%;
+      font-size: 3vw;
+      background-color: rgba(0,0,0,0.6);
+    }
+    #Avance{
+      overflow-y: scroll;
+    }
 }
