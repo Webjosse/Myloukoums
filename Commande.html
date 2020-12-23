@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="commande.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h2><a href="index.html">Accueil</a></h2>
+        <img src="medias/loukoum2.png" alt="Myloukoums.ml">
+        <h2><a href="">Mon Panier</a></h2>
+      </header>
+      <form action="results.html" method="get">
+        <input type="text" name="search" placeholder="Chercher ici" value="">
+        <input type="submit" name="confirmer" value="&#128270;">
+      </form>
+
+    <section>
+
+        <div class="bande_titre">
+            <h2> Votre livraison</h2>
+
+        </div>
+        
+
+        <form id="commande" action="commande.php" method="POST">
+            <!-- l'identité-->
+            <fieldset>
+                <legend>
+                  <h3>Votre identité</h3>
+                </legend>
+            
+                <ul>
+                    <li>
+                       <label for="nom">
+                            Nom <sup>*</sup>
+                        </label>
+                        <input id="nom" name="nom" type="text" placeholder="Richard" required >
+
+                    </li>
+                    <li>
+                         <label for="prenom">
+                            Prénom <sup>*</sup>
+                        </label>
+                        <input id="prenom" name="prenom" type="text" placeholder="Seb" required >
+                        
+                    </li>
+                    <li>
+                        <label for="mail">
+                            Email<sup>*</sup>
+                        </label>
+                        <input id="mail" name="mail" type="email" placeholder="myloukoums@G4.com" required>
+                    </li>
+                    <li>
+                        <label for="telephone">
+                            Téléphone <sup>*</sup>
+                        </label>
+                        <input id="telephone" name="telephone" type="tel" placeholder="par ex: +666666666" required>
+                    </li>
+                </ul>
+            </fieldset>
+           <!-- Adresse -->
+            <fieldset>
+                <legend>
+                    <h3>Adresse de livraison</h3>
+                </legend>
+                <ul>
+                    <li>
+                        <label for="adresse">
+                            Adresse <sup>*</sup>
+                        </label>
+                        <textarea id="adresse" name="adresse" required placeholder=" 18 rue myloukmous boulevard"></textarea>
+                    </li>
+                    <li>
+                        <label for="code_postal"> 
+                            Code postal <sup>*</sup>
+                        </label>
+                        <input id="code_postal" name="code_postal" type="text" required placeholder="69500">
+                    </li>
+                    <li>
+                        <label for=pays>
+                            Pays <sup>*</sup>
+                        </label>
+                        <select id="pays" name="pays" required>
+
+                            <optgroup label="Europe">
+                                <option value="france">France</option>
+                                <option value="belgique">Belgique</option>
+                                <option value="suisse">Suisse</option>
+                                <option value="allemagne">Allemagne</option>
+                                <option value="italie">Italie</option>
+                                <option value="royaume-uni">Royaume-Uni</option>
+                            </optgroup>
+
+                            <optgroup label="Afrique">
+                                <option value="nigeria">Nigeria</option>
+                                <option value="cote d'ivoire">Côte d'Ivoire</option>
+                                <option value="soudan">Soudan</option>
+                                <option value="algerie">Algérie</option>
+                                <option value="tunisie">Tunisie</option>
+                                <option value="maroc">Maroc</option>
+                                <option value="madagascar">Madagascar</option>
+                                <option value="benin">Bénin</option>
+                                <option value="togo">Togo</option>
+                                <option value="egypte">Egypte</option>
+                            </optgroup>
+
+                            <optgroup label="Amerique">
+                                <option value="canada">Canada</option>
+                                <option value="etats-unis">Etats-Unis</option>
+                                <option value="Bresil">Bresil</option>
+                                <option value="mexique">Mexique</option>
+                                <option value="colombie">Colombie</option>
+                                <option value="perou">Pérou</option>
+                                <option value="cuba">Cuba</option>
+                            </optgroup>
+
+                            <optgroup label="Asie">
+                                <option value="japon">Japon</option>
+                                <option value="indonesie">Indonésie</option>
+                                <option value="chine">Chine</option>
+                                <option value="inde">Inde</option>
+                                <option value="singapour">Singapour</option>
+                                <option value="thailainde">Thailainde</option>
+                                <option value="armenie">Armenie</option>
+                            </optgroup>
+
+                        </select>
+                    </li>
+                </ul>
+            </fieldset>
+ <!--  CB -->
+            <fieldset>
+                <legend>
+                    <h3> Informations CB </h3>
+                </legend>
+                <ul>
+                    <li>
+                        <fieldset>
+                            <legend>
+                                Type de carte bancaire <sup>*</sup>
+                            </legend>
+                            <ul>
+                                <li>
+                                    <input id="visa" name=type_de_carte type="radio" value="visa">
+                                    <label for="visa">VISA</label>
+                                </li>
+                                <li>
+                                    <input id="amex" name="type_de_carte" type="radio" value="american_express">
+                                    <label for=amex>AmEx</label>
+                                </li>
+                                <li>
+                                    <input id="mastercard" name="type_de_carte" type="radio" value="mastercard">
+                                    <label for="mastercard">Mastercard</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </li>
+                    <li>
+                        <label for="numero_de_carte">N° de carte<sup>*</sup></label>
+                        <input id="numero_de_carte" name="numero_de_carte" type="number" min=0 required>
+                    </li>
+                    <li>
+                        <label for="securite">Code sécurité <sup>*</sup></label>
+                        <input id="securite" name="securite" type="number" required>
+                    </li>
+
+                </ul>
+            </fieldset>
+          <!-- La commande --> 
+            <fieldset>
+                <legend>
+                    <h3>Pour votre plaisir</h3>
+
+                </legend>
+                <label for="commander"> Regalez-vous ! </label>
+                <input id="commander"type="submit" value="Commander">
+            </fieldset>
+        </form>
+        
+    </section>
+    <footer>
+
+		<div class="contenu_footer">
+
+			<div class="footer_services">
+				<h3>Nos Services</h3>
+				<ul class="liste_footer">
+					<li><a href="#">Vente en magazin</a></li>
+					<li><a href="#">Vente à en porter</a></li>
+					<li><a href="#">Vente en ligne</a></li>  
+				</ul>
+			</div>
+
+			<div class="footer_contact">
+				<h3>Nous contacter</h3>
+				<ul class="liste_footer">
+				<li><a href="#">
+					1 Rue de la Technologie, 69622 Villeurbanne
+					</a>
+				</li>
+				<li><a href="#">
+					04 72 69 20 00
+					</a>
+				</li>
+				<li><a href="#">
+					Qui sommes nous ?
+					</a>
+				</li>              
+
+				<li><a href="#">
+					<img src="medias/fb.png" alt="icones réseaux sociaux"> 
+					Facebook</a>
+				</li>
+				<li><a href="#">
+					<img src="medias/insta.png" alt="icones réseaux sociaux">
+					Instagram</a>
+				</li>
+				<li><a href="#">
+					<img src="medias/twitter.png" alt="icones réseaux sociaux">
+					Twitter</a>
+				</li>     
+				</ul>
+
+			</div>
+
+			<div class="footer_horaires">
+				<h3>Les horaires</h3>
+				<ul class="liste_footer">
+				<li>
+					✅ Lun 10h-19h
+				</li>
+				<li>
+					✅ Mar 10h-19h
+				</li>
+				<li>
+					✅ Mer 10h-19h
+				</li>
+				<li>
+					✅ Jeu 10h-19h
+				</li>
+				<li>
+					✅ Ven 10h-19h
+				</li>
+				<li>
+					❌ Sam fermé
+				</li>
+				<li>
+					❌ Dim fermé
+				</li>
+				</ul>
+			</div>
+		</div>
+
+  	</footer>	
+</body>
+</html>

@@ -76,6 +76,7 @@ header + form input:last-child{
 
 ul.liste_footer{
   list-style-type: none;
+  padding: 0;
 }
 ul.liste_footer li a{
   cursor: pointer;
