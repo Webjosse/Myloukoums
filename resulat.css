@@ -136,7 +136,6 @@ input#recherche{
 .recherche img{
 
   width: 30%;
-  height: 30%;
   margin: 10px;
 
 }
@@ -194,15 +193,13 @@ fieldset.pays{
   .grid1{
 
 
-    align-self: start;
-
-
     grid-column: 1/3;
     grid-row: 2/3;
 
   }
 
   .grid2{
+    background-color: rgb(44, 55, 204);
 
     grid-column: 1/3;
     grid-row: 3/4;
@@ -211,6 +208,7 @@ fieldset.pays{
 
 
   .grid3{
+    background-color: blueviolet;
 
     grid-column: 2;
     grid-row: 4/9;
@@ -233,7 +231,7 @@ fieldset.pays{
 
     grid-column: 1;
     grid-row:6/7;
-    align-self: end;
+    
 
   }
 
@@ -260,4 +258,13 @@ fieldset.pays{
 
 
 
+}
+
+
+@media screen and (max-width : 375px){
+
+
+  .description p {
+    display: none;
+  }
 }

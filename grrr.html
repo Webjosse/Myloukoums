@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<link rel="stylesheet" href="grrr.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<header>
+        <h2><a href="">Accueil</a></h2>
+        <img src="medias/loukoum2.png" alt="Myloukoums.ml">
+        <h2><a href="">Mon Panier</a></h2>   
+      </header>
+      <form id="nav" action="results.html" method="get">
+        <input type="text" name="search" placeholder="Chercher ici" value="">
+        <input type="submit" name="confirmer" value="&#128270;">
+      </form>
+    
+    <section>
+        
+        <div class="bande_titre">
+            <h2>RESULTATS</h2>
+
+        </div>
+        <div id="Articles_et_Avance">
+            <div id="articles">
+                <div class="recherche">
+    
+                    <img src="medias/choco.png" alt="loukoums aux chocolats">
+    
+                    <div>
+                        <div>
+                            <h1> Chocoloukoum</h1>
+                            <p> 
+								Ressentez dans vos papilles des flots de chocolats, tout ça en un seul loukoum.
+                             
+								<b>Chocoloukoum</b>.
+							</p>
+                        
+                        </div>
+                        <div>
+                            <img src="/medias/panier.jpeg" alt="logo ajout au panier"> 
+                            <div>
+                                <h5> 9,99€/kg</h5>
+                            </div>
+                        </div>
+                                
+                            
+                    </div>
+				</div>
+				
+				<div class="recherche">
+    
+                    <img src="medias/loukoum1.png" alt="loukoums à la fraise">
+    
+                    <div>
+                        <div>
+                            <h1> Fruit rouge loukoums</h1>
+                            <p> Un cadeau idéal pour un dîner chez des amis, une occasion très particulière… ou simplement pour se faire plaisir.
+							</p>
+                        
+                        </div>
+                        <div>
+                            <img src="/medias/panier.jpeg" alt="logo ajout au panier"> 
+                            <div>
+                                <h5> 9,99€/kg</h5>
+                            </div>
+                        </div>
+                                
+                            
+                    </div>
+                </div>
+				   
+				<div class="recherche">
+    
+                    <img src="medias/bizar.jpg" alt="loulkoums aux amandes">
+    
+                    <div>
+                        <div>
+                            <h1> Delice d'amande</h1>
+                            <p> 
+								Goûtez à l’artisanat véritable ! <br>
+								Partez en voyage avec ces amandes croustillantes, dorées au soleil californien, et une note de miel d'acacia.
+							</p>
+                        
+                        </div>
+                        <div>
+                            <img src="/medias/panier.jpeg" alt="logo ajout au panier"> 
+                            <div>
+                                <h5> 9,99€/kg</h5>
+                            </div>
+                        </div>
+                                
+                            
+                    </div>
+                </div>
+				   
+				<div class="recherche">
+    
+                    <img src="medias/CC_loukoums.jpg" alt="assiète de loukoums ">
+    
+                    <div>
+                        <div>
+                            <h1> Les 1000 varités</h1>
+                            <p> 
+								Craquez pour les écrins de loukoums aux parfums et aux intensités variés.
+							</p>
+                        
+                        </div>
+                        <div>
+                            <img src="/medias/panier.jpeg" alt="logo ajout au panier"> 
+                            <div>
+                                <h5> 9,99€/kg</h5>
+                            </div>
+                        </div>
+                                
+                            
+                    </div>
+                </div>
+                   
+                   
+    
+            </div>
+                
+           
+    
+    
+             <!-- Formulaire de recherche -->
+                <form id="Avance" action="recherche.php" method="GET">
+                        
+                    <div class="grid0"> 
+                        <h2>FILTRER LES PRODUITS</h2>
+                    </div>
+    
+                    <div class="grid1">                             
+                        <div>
+                            <fieldset>
+                                <legend>
+                                    <h3> Chercher par mot-clé :</h3>                              
+                                    
+                                </legend>
+                                <input type="text" id="recherche" name="recherche" placeholder="Marque,Goût....">
+                            </fieldset>
+                        </div>
+    
+                    </div>
+    
+                    <!--Filtre Regions-->
+                	<div>
+    
+                     
+								
+						<fieldset>
+							<legend>
+								<h3>Pays :</h3>
+							</legend>
+			
+							<select id="pays" name="pays">
+
+								<optgroup label="Europe">
+									<option value="france">France</option>
+									<option value="belgique">Belgique</option>
+									<option value="suisse">Suisse</option>
+									<option value="allemagne">Allemagne</option>
+									<option value="italie">Italie</option>
+									<option value="royaume-uni">Royaume-Uni</option>
+								</optgroup>
+
+								<optgroup label="Afrique">
+									<option value="nigeria">Nigeria</option>
+									<option value="cote d'ivoire">Côte d'Ivoire</option>
+									<option value="soudan">Soudan</option>
+									<option value="algerie">Algérie</option>
+									<option value="tunisie">Tunisie</option>
+									<option value="maroc">Maroc</option>
+									<option value="madagascar">Madagascar</option>
+									<option value="benin">Bénin</option>
+									<option value="togo">Togo</option>
+									<option value="egypte">Egypte</option>
+								</optgroup>
+
+								<optgroup label="Amerique">
+									<option value="canada">Canada</option>
+									<option value="etats-unis">Etats-Unis</option>
+									<option value="Bresil">Bresil</option>
+									<option value="mexique">Mexique</option>
+									<option value="colombie">Colombie</option>
+									<option value="perou">Pérou</option>
+									<option value="cuba">Cuba</option>
+								</optgroup>
+
+								<optgroup label="Asie">
+									<option value="japon">Japon</option>
+									<option value="indonesie">Indonésie</option>
+									<option value="chine">Chine</option>
+									<option value="inde">Inde</option>
+									<option value="singapour">Singapour</option>
+									<option value="thailainde">Thailainde</option>
+									<option value="armenie">Armenie</option>
+								</optgroup>
+
+							</select>
+	
+                    	</fieldset>
+ 
+                	</div>
+                        
+                    <!--Filtre Gouts-->
+                <div >
+		
+                    <fieldset>
+						<legend>
+							<h3> Goûts:</h3>
+						</legend>
+						<label>
+							<input name="topping" type="checkbox" value="bergamote">
+							Bergamote
+						</label>
+
+						<label>
+							<input name="topping" type="checkbox" value="cannelle">
+							Cannelle
+						</label>
+						<label>
+							<input name="topping" type="checkbox" value="fraise">
+							Fraise
+						</label>
+						<label>
+							<input name="topping" type="checkbox" value="menthe">
+							Menthe
+						</label>
+
+						<label>
+							<input name="topping" type="checkbox" value="noisette">
+							Noisette
+						</label>
+						<label>
+							<input name="topping" type="checkbox" value="rose">
+							Rose
+						</label>
+						<label>
+							<input name="topping" type="checkbox" value="vanille">
+							Vanille
+						</label>
+						<label>
+							<input name="topping" type="checkbox" value="assortis">
+							Assortis
+						</label>
+						<label>
+							<input name="topping" type="checkbox" value="citron">
+							Citron
+						</label>
+						<label>
+							<input name="topping" type="checkbox" value="amandes">
+							Amande
+						</label>
+						<label>
+							<input name="topping" type="checkbox" value="pistache">
+							Pistache
+						</label>
+
+					</fieldset>
+				</div>
+    
+                        
+                    
+    
+                    <!--Filtre Qualité-->
+                <div >
+					<fieldset class="qualite">
+						<legend>
+							<h3> Qualité:</h3>
+						</legend>
+
+
+						<label>
+							<input name="qualite" type="radio" value="petite" id = "petite">
+							Petite
+						</label>
+
+
+						<label>
+							<input name="qualite" type="radio" value="moyenne" id = "moyenne">
+							Moyenne
+						</label>
+
+
+						<label>
+							<input name="qualite" type="radio" value="grande" id ="grande">
+							Grande
+						</label>
+
+
+					</fieldset>
+      
+                </div>
+                    <!--Filtre Prix-->
+                <div >
+ 
+                    
+                        <fieldset>
+                            <legend>
+                                <h3> Prix/kg: <br> 1€ &rArr; 10€</h3>
+                            </legend>
+                            <input type="range" name="prix">
+                        </fieldset>
+                            
+                </div>
+    
+                    <!--Envoi ou annulation-->
+                <div >
+                    
+                        <fieldset>
+                            <legend>
+                            	<h3> Pour votre plaisir</h3>
+                            </legend>
+    
+                            <input type="submit" value="Rechercher">
+                            <input type="reset" value="Annuler" >
+                    </fieldset>
+                </div>
+            </form>
+
+
+
+
+        </div>
+            
+        
+	</section>
+   <!--Pied de page -->
+   	<footer>
+
+		<div class="contenu_footer">
+
+			<div class="footer_services">
+				<h3>Nos Services</h3>
+				<ul class="liste_footer">
+					<li><a href="#">Vente en magazin</a></li>
+					<li><a href="#">Vente à en porter</a></li>
+					<li><a href="#">Vente en ligne</a></li>  
+				</ul>
+			</div>
+
+			<div class="footer_contact">
+				<h3>Nous contacter</h3>
+				<ul class="liste_footer">
+				<li><a href="#">
+					1 Rue de la Technologie, 69622 Villeurbanne
+					</a>
+				</li>
+				<li><a href="#">
+					04 72 69 20 00
+					</a>
+				</li>
+				<li><a href="#">
+					Qui sommes nous ?
+					</a>
+				</li>              
+
+				<li><a href="#">
+					<img src="medias/fb.png" alt="icones réseaux sociaux"> 
+					Facebook</a>
+				</li>
+				<li><a href="#">
+					<img src="medias/insta.png" alt="icones réseaux sociaux">
+					Instagram</a>
+				</li>
+				<li><a href="#">
+					<img src="medias/twitter.png" alt="icones réseaux sociaux">
+					Twitter</a>
+				</li>     
+				</ul>
+
+			</div>
+
+			<div class="footer_horaires">
+				<h3>Les horaires</h3>
+				<ul class="liste_footer">
+				<li>
+					✅ Lun 10h-19h
+				</li>
+				<li>
+					✅ Mar 10h-19h
+				</li>
+				<li>
+					✅ Mer 10h-19h
+				</li>
+				<li>
+					✅ Jeu 10h-19h
+				</li>
+				<li>
+					✅ Ven 10h-19h
+				</li>
+				<li>
+					❌ Sam fermé
+				</li>
+				<li>
+					❌ Dim fermé
+				</li>
+				</ul>
+			</div>
+		</div>
+
+  </footer>	
+
+	
+ 
+</body>
+</html>
