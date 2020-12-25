@@ -131,6 +131,48 @@ div.footer_contact img{
   font-size: 3vw;
   margin: 0%;
 }
+
+#panier{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+#panier > div{
+  height:100vw;
+  width: 90%;
+  margin: 4%;
+  border: 2px solid #0fbcf9;
+  overflow: hidden;
+  border-radius: 5%;
+  color: #fff;
+  font-size: 7vw;
+}
+
+#panier > div div{
+  width:100%;
+  height: 42%;
+  padding-top: 8%;
+  margin: 0px;
+  background-size: cover;
+}
+
+#panier h4{
+  background-color: rgba(0,0,0,0.7);
+  margin: 0px;
+  text-align: center;
+}
+
+#panier ul{
+  display: block;
+  height:55%;
+  background-color: #0fbcf9;
+  margin: 0px;
+}
+#panier ul li{
+  list-style: none;
+}
+
 @media (min-width:1000px) {
 
   header + form{
@@ -193,6 +235,15 @@ article#pres div input:hover{
   cursor: pointer;
 }
 @media (min-width:800px){
+  #panier{
+    flex-direction: row;
+  }
+  #panier > div{
+    height:50vw;
+    width: 40%;
+    margin: 3%;
+    font-size: 3.5vw;
+  }
   article#pres{
     flex-direction: row;
     width: 100%;
@@ -298,6 +349,12 @@ article#pres div input:hover{
 
 
 @media (min-width: 1000px) {
+  #panier > div{
+    height:30vw;
+    width: 28%;
+    margin: 2%;
+    font-size: 2vw;
+  }
   #une_slider h3 + p + div{
     font-size: 2vw;
   }
@@ -321,7 +378,7 @@ article#pres div input:hover{
     }
 
     #une_slider{
-      height:40vh;
+      height:auto;
       width: 90vw;
       overflow: hidden;
       border: 7px solid #0fbcf9;
@@ -340,7 +397,6 @@ article#pres div input:hover{
     }
     #une_slider ul li{
       display: block;
-      height:80%;
       background-color: red;
       margin: 30px;
       padding: 0px;
@@ -350,7 +406,8 @@ article#pres div input:hover{
       padding: 0px;
       margin: 0px;
       text-align: center;
-      font-size: 300%
+      font-size: 300%;
+      padding-bottom: 10%;
     }
     /*Pour l'espace commentaire*/
     #comment form{
