@@ -1,9 +1,13 @@
-/*HEADER*/
-
+section{
+    background-color: #0fbcf9;
+    padding:5px;
+}
 body{
   margin: 0px;
   font-family: sans-serif;
 }
+
+/*HEADER*/
 header{
   top:0px;
   left:0px;
@@ -68,6 +72,23 @@ body > h1{
   color: #0fbcf9;
   font-size: 5vw;
 }
+
+/*La bande sous certains titres*/
+.bande_titre > :nth-child(1){
+    position: relative;
+    font-size: 8vw;
+
+}
+.bande_titre > :nth-child(1)::before {
+    content: "";
+    position: absolute;
+    left: 4px;
+    width: 20vw;
+    height: 1vw;
+    background: #175e70;
+    bottom: -2px;
+}
+
 
 /*FOOTER*/
 
@@ -335,6 +356,11 @@ display: none;
 
 
 @media (min-width: 1000px) {
+
+  #qui_sommes-nous > div >div{
+      display:flex;
+      flex-direction: row-reverse;
+  }
   #panier > div{
     height:30vw;
     width: 28%;

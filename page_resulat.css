@@ -1,27 +1,5 @@
-
-section{
-    background-color: rgb(29, 109, 201);
-    padding:5px;
-}
-/* bande du titre */
-.bande_titre > :nth-child(1){
-    position: relative;
-    font-size: 8vw;
-    
-}
-.bande_titre > :nth-child(1)::before {
-    content: "";
-    position: absolute;
-    left: 4px;
-    width: 20vw;
-    height: 1vw;
-    background: #175e70;
-    bottom: -2px;
-}
-
-
  /* Partie Article et Avance*/
- 
+
 #Articles_et_Avance{
 
     text-align: center;
@@ -30,17 +8,17 @@ section{
 
 #Articles_et_Avance > #articles {
     padding: 10px;
-    display: flex;   
+    display: flex;
     flex-direction: column;
 }
 #articles > .recherche{
     display: inline-flex;
     justify-content: space-between;
-   
+
     border-radius: 5px;
     margin-bottom: 5px;
     color : white;
-    
+
     background:#23a5c5;
     border: 2px solid #f0eef0;
     text-align: justify;
@@ -52,13 +30,13 @@ section{
 .recherche >img:first-of-type{
     align-self: center;
     width:30%;
-    
+
     margin: 5px;
 }
 
 /* article boite (titre + description ) + (panier +prix)*/
 .recherche > div:first-of-type{
-    
+
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -67,32 +45,32 @@ section{
 /* nom de l'article + description */
 .recherche > div:first-of-type > div:nth-child(1){
     background-color: rgb(71, 167, 231);
-    
-    
-   
-    
+
+
+
+
 }
-/* nom de l'artcile */ 
+/* nom de l'artcile */
 .recherche > div:first-of-type >div:first-of-type > :nth-child(1){
     background-color: rgb(22, 20, 187);
-  
+
 }
 /* description de l'article */
 .recherche > div:first-of-type >div:first-of-type > :nth-child(2){
-    
+
     text-align: initial;
     margin-left: 5px;
     display:none;
     justify-content: space-between;
     width: 100%;
-   
+
 
 
 }
 
-/* posssibllité d'ajouter au panier + prix */ 
+/* posssibllité d'ajouter au panier + prix */
 .recherche > div:first-of-type > div:nth-child(2){
-    
+
     justify-content: center;
     border-top: 1px dashed ;
     position: relative;
@@ -100,20 +78,20 @@ section{
 }
  /* panier avec lien */
 
- /* image du panier*/ 
+ /* image du panier*/
  .recherche > div:first-of-type > div:nth-child(2) > :nth-child(1){
     width: 30%;
-    border-radius: 50%; 
+    border-radius: 50%;
     position: absolute;
     right: 3px;
     bottom: 5px;
 }
 
-/* le prix de l'article */ 
+/* le prix de l'article */
 .recherche > div:first-of-type > div:nth-child(2) > :nth-child(2){
-    
+
    text-align:start;
-   
+
 
 }
 
@@ -121,17 +99,17 @@ section{
 
 
 #Articles_et_Avance > form#Avance {
-   
+
     background-color: rgb(61, 98, 179);
     padding-bottom: 10px;
 }
 
 
 #Avance > div:nth-child(1){
-   
+
     border-bottom: 3px solid;
 
-    
+
 }
 
 
@@ -141,20 +119,20 @@ section{
 
 #Avance > fieldset:nth-child(3) > select{
     display: flex ;
-    width: 100%; 
+    width: 100%;
 }
 #Avance > fieldset:nth-child(2) > input{
     display: flex ;
-    width: 95%; 
+    width: 95%;
 }
 
 fieldset > ul{
-    
+
     list-style-type: none;
     text-align: left;
     padding: 0;
-    
-   
+
+
 }
 
 
@@ -173,10 +151,10 @@ fieldset > ul{
         display:inherit;
         text-align: initial;
         margin-left: 5px;
-        
+
         justify-content: space-between;
         width: 100%;
-       
+
 
 
     }
@@ -186,36 +164,36 @@ fieldset > ul{
 
 @media screen and (min-width : 600px) {
 
-     
-    #Articles_et_Avance{  
+
+    #Articles_et_Avance{
         text-align: center;
     }
 
 
     #articles > .recherche{
         font-size: 2.5vw;
-        
+
     }
     .recherche > div:first-of-type{
-        
+
         flex-direction: inherit;
     }
     .recherche > div:first-of-type > div:nth-child(2){
 
-        
+
         justify-content: center;
         border-left: 1px dashed black ;
         border-top:inherit;
 
     }
-    
+
 
     .recherche > div:first-of-type > div:nth-child(2){
-       
+
         display: flex;
         flex-direction: column;
         align-items: inherit;
-    
+
     }
 
 
@@ -226,38 +204,38 @@ fieldset > ul{
 
 
 }
- 
-    
+
+
 @media screen and (min-width : 1024px) {
 
 
     #Articles_et_Avance{
         display:flex;
         flex-direction: row-reverse;
-       
-        
+
+
     }
-  
+
 
     #articles > .recherche{
         font-size: 1.5vw;
-        
+
     }
 
     .recherche > div:first-of-type > div:nth-child(1){
         font-size: inherit;
-        margin: 10px;  
+        margin: 10px;
     }
 
     #Articles_et_Avance > #Avance {
-       
+
         display: grid;
         grid-template-columns: 250px 200px ;
         padding: 5px;
         border-radius: 5px;
-       
-        
-       
+
+
+
     }
 
 
@@ -266,37 +244,37 @@ fieldset > ul{
         border-bottom: 3px solid;
         grid-column: 1/3;
         grid-row: 1/2;
-      
-        
+
+
     }
 
-    
+
     #Avance > fieldset:nth-child(2){
         grid-column: 1/3;
         grid-row: 2/3;
-    
+
     }
-    
+
     #Avance > fieldset:nth-child(3){
-       
+
         display: flex ;
         flex-direction: column;
-    
+
         grid-column: 1/3;
         grid-row: 3/4;
-    
+
     }
 
 
-    
-    
+
+
     #Avance > fieldset:nth-child(4){
         grid-column: 2/3;
         grid-row: 4/9;
     }
 
     #Avance > fieldset:nth-child(4)>ul>li{
-        
+
         margin-bottom: 10px;
     }
 
@@ -309,38 +287,30 @@ fieldset > ul{
     }
 
     #Avance > fieldset:nth-child(5)>ul {
-        
+
         display:inherit;
-        
+
     }
 
-   
-    
+
+
     #Avance > fieldset:nth-child(6){
-    
+
         display: inherit;
         grid-column: 1;
         grid-row:6/8;
-    
+
     }
-    
+
     #Avance > fieldset:last-child{
         grid-column: 1;
         grid-row:8/9;
 
-    
+
     }
 
     #Avance > fieldset:last-child > input:last-child{
         margin-top :10px;
     }
-    
-
 
 }
-
-
-
-
-
-
