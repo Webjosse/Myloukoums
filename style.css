@@ -1,3 +1,5 @@
+/*HEADER*/
+
 body{
   margin: 0px;
   font-family: sans-serif;
@@ -60,18 +62,19 @@ header + form input:last-child{
   font-size: 150%;
 }
 
+/*TITRES*/
+body > h1{
+  text-align: center;
+  color: #0fbcf9;
+  font-size: 5vw;
+}
 
-/*  Footer*/
-
+/*FOOTER*/
 
 .contenu_footer {
   border-top: 2px dashed ;
   display: flex;
-
   flex-direction: column;
-
-
-
 }
 
 ul.liste_footer{
@@ -93,6 +96,8 @@ ul.liste_footer li {
 div.footer_contact img{
   width :30px;
 }
+
+/*SECTION COMMENTAIRE*/
 
 #comment{
   background-color: #0fbcf9;
@@ -131,23 +136,50 @@ div.footer_contact img{
   font-size: 3vw;
   margin: 0%;
 }
-@media (min-width:1000px) {
 
-  header + form{
-    height: 4vw;
-  }
-  .contenu_footer {
+/*PANIER*/
 
-    flex-direction: inherit;
-    justify-content: space-between;
-
-  }
+#panier{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
-body > h1{
+
+#panier > div{
+  height:100vw;
+  width: 90%;
+  margin: 4%;
+  border: 2px solid #0fbcf9;
+  overflow: hidden;
+  border-radius: 5%;
+  color: #fff;
+  font-size: 7vw;
+}
+
+#panier > div div{
+  width:100%;
+  height: 42%;
+  padding-top: 8%;
+  margin: 0px;
+  background-size: cover;
+}
+
+#panier h4{
+  background-color: rgba(0,0,0,0.7);
+  margin: 0px;
   text-align: center;
-  color: #0fbcf9;
-  font-size: 5vw;
 }
+
+#panier ul{
+  display: block;
+  height:55%;
+  background-color: #0fbcf9;
+  margin: 0px;
+}
+#panier ul li{
+  list-style: none;
+}
+
 
 /* Pour la page d'article*/
 article#pres{
@@ -192,30 +224,49 @@ article#pres div input:hover{
   transform:  scale(1.1);
   cursor: pointer;
 }
-@media (min-width:800px){
-  article#pres{
-    flex-direction: row;
-    width: 100%;
-    margin-left: 0vw;
-  }
-  article#pres img{
-    height: 50%;
-    width: 50%;
-    margin-top: 0px;
-  }
-  #comment form{
-    height: 5vw;
-  };
-}
 
 /* TOUTE CETTE PARTIE EST POUR LE SLIDER DE LA UNE / ARTICLES PROMO*/
+#une_slider ul li{
+        /*Ce qui changera avec la version PC*/
+          width: 90vw;
+          background-size: cover;
+          list-style: none;
+          margin-bottom: 10%;
+}
+
 #une_slider ul li > div{
   display:block;
   background-color: rgba(0,0,0,0.7);
   color: #0fbcf9;
-  height: inherit;
+  height: 89vw;
+  padding-top: 1vw;
 }
 
+#une_slider h3 + p {
+      font-size: 5vw;
+      margin: 10%;
+      text-align: justify;
+}
+#une_slider h3{
+    font-size: 10vw;
+    text-align: center;
+}
+
+
+#une_slider h3 + p + div{
+  display: block;
+  text-align: center;
+  color: inherit;
+  font-size: 7vw;
+  text-decoration: none;
+  height: 100%;
+}
+#une_slider h3 + p + div a{
+  text-decoration: none;
+  color: #0fbcf9;
+}
+
+/*Pour la présentation*/
 
 #une_infos{
   margin-bottom: 5vw;
@@ -239,56 +290,40 @@ article#pres div input:hover{
   font-size: 3vw;
 }
 
-
-@media (max-width: 1000px) {
-  #une_slider{
-    color: #0fbcf9;
-  }
-  #une_slider ul{
-      margin-left: 5vw;
-      padding: 0px;
-      width: 90vw;
-  }
-  #une_slider ul li{
-    width: 90vw;
-    background-size: cover;
-    list-style: none;
-    display: block;
-    margin-bottom: 10%;
-  }
-  #une_slider ul li > div{
-    padding-top: 1vw;
-    height: 89vw;
-  }
-#une_slider h3{
-    font-size: 10vw;
-    text-align: center;
-  }
-#une_slider h3 + p {
-      font-size: 5vw;
-      margin: 10%;
-      text-align: justify;
-  }
-/* Pour la page articles*/
-#comment + #une_slider{
-  display: none;
+/* Pour le "voir plus"
+de la page articles*/
+#comment + h1{
+display: none;
 }
+#comment + h1 + #une_slider{
+display: none;
 }
 
-#une_slider h3 + p + div{
-  display: block;
-  text-align: center;
-  color: inherit;
-  font-size: 7vw;
-  text-decoration: none;
-  height: 100%;
-}
-#une_slider h3 + p + div a{
-  text-decoration: none;
-  color: #0fbcf9;
-}
+/*POUR PC ET TABLETTE*/
 
-@media (min-width: 800px) {
+@media (min-width:800px){
+  #panier{
+    flex-direction: row;
+  }
+  #panier > div{
+    height:50vw;
+    width: 40%;
+    margin: 3%;
+    font-size: 3.5vw;
+  }
+  article#pres{
+    flex-direction: row;
+    width: 100%;
+    margin-left: 0vw;
+  }
+  article#pres img{
+    height: 50%;
+    width: 50%;
+    margin-top: 0px;
+  }
+  #comment form{
+    height: 5vw;
+  };
   #une_slider ul li > div{
     padding-top: 2%;
     padding-bottom: 2%;
@@ -296,20 +331,26 @@ article#pres div input:hover{
   }
 }
 
+/*POUR PC*/
+
 
 @media (min-width: 1000px) {
+  #panier > div{
+    height:30vw;
+    width: 28%;
+    margin: 2%;
+    font-size: 2vw;
+  }
   #une_slider h3 + p + div{
     font-size: 2vw;
   }
   #une_slider h3{
     margin: 0%;
     font-size: 50px;
-    text-align: center;
   }
   #une_slider h3 + p {
       font-size: 25px;
       margin: 5%;
-      text-align: justify;
   }
   @keyframes carous{
       from {
@@ -321,36 +362,45 @@ article#pres div input:hover{
     }
 
     #une_slider{
-      height:40vh;
+      height:auto;
       width: 90vw;
       overflow: hidden;
       border: 7px solid #0fbcf9;
       margin: auto;
       margin-bottom: 5vw;
+      color: #0fbcf9;
     }
-    #une_slider ul {
+    #une_slider ul{
       animation: carous 20s linear 0s infinite;
       display: flex;
       justify-content: left;
       align-items: center;
       height: 100%;
+      margin-left: 5vw;
+      padding: 0px;
+      width: 90vw;
     }
     #une_slider ul:hover{
       animation-play-state: paused;
     }
     #une_slider ul li{
       display: block;
-      height:80%;
       background-color: red;
       margin: 30px;
       padding: 0px;
+      width: auto;
+      background-size: auto;
+      padding-bottom: auto;
     }
   #une_slider ul li > div{
+      height: inherit;
       width: 500px;
       padding: 0px;
       margin: 0px;
       text-align: center;
-      font-size: 300%
+      font-size: 300%;
+      padding-bottom: 10%;
+      list-style: none;
     }
     /*Pour l'espace commentaire*/
     #comment form{
@@ -360,7 +410,22 @@ article#pres div input:hover{
       font-size: 2vw;
     }
   }
-  #une_slider ul li > div{
-    list-style: none;
+  /*Afficher le "Voir plus"*/
+
+  #comment + h1{
+  display: block;
+  }
+  #comment + h1 + #une_slider{
+  display: block;
+  }
+
+  header + form{
+    height: 4vw;
+  }
+  .contenu_footer {
+
+    flex-direction: inherit;
+    justify-content: space-between;
+
   }
 }
