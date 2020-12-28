@@ -42,14 +42,6 @@
     width: 100%;
 }
 
-/* nom de l'article + description */
-.recherche > div:first-of-type > div:nth-child(1){
-    background-color: rgb(71, 167, 231);
-
-
-
-
-}
 /* nom de l'artcile */
 .recherche > div:first-of-type >div:first-of-type > :nth-child(1){
     background-color: rgb(22, 20, 187);
@@ -100,7 +92,7 @@
 
 #Articles_et_Avance > form#Avance {
 
-    background-color: rgb(61, 98, 179);
+    background-color: #175e70;;
     padding-bottom: 10px;
 }
 
@@ -162,7 +154,7 @@ fieldset > ul{
 }
 
 
-@media screen and (min-width : 600px) {
+@media screen and (min-width : 800px) {
 
 
     #Articles_et_Avance{
@@ -206,7 +198,7 @@ fieldset > ul{
 }
 
 
-@media screen and (min-width : 1024px) {
+@media screen and (min-width : 1000px) {
 
 
     #Articles_et_Avance{

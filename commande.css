@@ -1,5 +1,5 @@
 form#commande{
-    background-color: rgb(109, 137, 155);
+    background-color: #175e70;
     margin:0;
     padding: 1px;
     border-radius: 5px;
@@ -54,13 +54,11 @@ form#commande> fieldset:last-child{
 @media screen and (max-width:375px){
     form#commande > fieldset > ul > li > label{
        display: block;
-
-       background-color: lawngreen;
     }
 
 }
 
-@media screen and (min-width:600px){
+@media screen and (min-width:800px){
 
     form#commande{
 
@@ -90,7 +88,7 @@ form#commande> fieldset:last-child{
 
 }
 
-@media screen and (min-width:1024px){
+@media screen and (min-width:1000px){
 
     form#commande> fieldset:nth-child(3)>ul>li:last-child,form#commande> fieldset:nth-child(3)>ul>li:nth-last-child(2){
 
