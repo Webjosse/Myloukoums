@@ -79,7 +79,7 @@
  /* panier avec lien */
 
  /* image du panier*/
- .recherche > div:first-of-type > div:nth-child(2) > :nth-child(1){
+ .recherche > div:first-of-type > div:nth-child(2) > a>:nth-child(1){
     width: 30%;
     border-radius: 50%;
     position: absolute;
