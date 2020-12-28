@@ -133,16 +133,17 @@ div.footer_contact img{
   margin: 3%;
   height: 7vw;
 }
-#comment form input{
+#comment form input,
+#comment form textarea{
   background-color: #fff;
   border-radius: 1vw;
   font-size: 2.5vw;
 }
-#comment form input:first-child{
+#comment form textarea{
   width: 75%;
   padding-left: 5%;
 }
-#comment form input:last-child{
+#comment form input{
   width: 20%;
 }
 
@@ -410,7 +411,7 @@ form#commande> fieldset:last-child{
   }
   #comment form{
     height: 5vw;
-  };
+  }
   #une_slider ul li > div{
     padding-top: 2%;
     padding-bottom: 2%;
@@ -508,7 +509,7 @@ form#commande> fieldset:last-child{
       padding: 0px;
       width: auto;
       background-size: auto;
-      padding-bottom: auto;
+      padding-bottom: 0px;
     }
   #une_slider ul li > div{
       height: inherit;
@@ -524,7 +525,8 @@ form#commande> fieldset:last-child{
     #comment form{
       height: 3vw;
     }
-    #comment form input{
+    #comment form input,
+    #comment form textarea{
       font-size: 2vw;
     }
   
