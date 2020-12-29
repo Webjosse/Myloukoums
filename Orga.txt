@@ -1,5 +1,0 @@
-Lier toutes les page (y compris articles à page_resultat, et panier et validation)
-
-Refaire Commandes.html pour le tel (pas les bonnes tailles)
-
-Centraliser commande.css

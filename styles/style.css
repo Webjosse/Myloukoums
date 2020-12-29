@@ -40,7 +40,7 @@ header + form{
   display: inline-block;
   margin: 1%;
   width: 98%;
-  height: 8vw;
+  height: 3em;
   color: #fff;
 }
 header + form input{
@@ -248,9 +248,14 @@ article#pres div input:hover{
 }
 
 /* TOUTE CETTE PARTIE EST POUR LE SLIDER DE LA UNE / ARTICLES PROMO*/
+
+#une_slider ul{
+  width: 90%;
+  padding: 5%;
+}
 #une_slider ul li{
         /*Ce qui changera avec la version PC*/
-          width: 90vw;
+          width: inherit;
           background-size: cover;
           list-style: none;
           margin-bottom: 10%;
@@ -449,11 +454,6 @@ form#commande> fieldset:last-child{
 
 
 @media (min-width: 1000px) {
-
-  #qui_sommes-nous > div >div{
-      display:flex;
-      flex-direction: row-reverse;
-  }
   #panier > div{
     height:30vw;
     width: 28%;
@@ -482,7 +482,7 @@ form#commande> fieldset:last-child{
 
     #une_slider{
       height:auto;
-      width: 90vw;
+      width: 90%;
       overflow: hidden;
       border: 7px solid #0fbcf9;
       margin: auto;
@@ -529,7 +529,7 @@ form#commande> fieldset:last-child{
     #comment form textarea{
       font-size: 2vw;
     }
-  
+
   /*Afficher le "Voir plus"*/
 
   #comment + h1{
@@ -566,8 +566,11 @@ form#commande> fieldset:last-child{
   #qui_sommes-nous > div >div{
     display:flex;
     flex-direction: row-reverse;
-    
-     
-}
+  }
+
+  #qui_sommes-nous > div >div >div{
+    display:flex;
+    justify-content: center;
+  }
 
 }
